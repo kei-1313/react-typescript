@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const str: string = 'Hello';
+
+  let num: number = 101;
+
+  let bignum: bigint = 103n;
+  console.log(bignum);
+
+  let bool: boolean = true;
+
+  let nullish: null = null;
+  let undefinedValue: undefined = undefined;
+  const nullStr: string = 'nullです';
+  const definedStr: string = 'no defined';
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        TypeScript
+      </h1>
+      <h2>{str}</h2>
+      <h2>{num}</h2>
+      <h2>{definedStr}</h2>
+      <h2>{nullStr}</h2>
+      {/* <h2>{bignum}</h2> */}
     </div>
   );
 }
