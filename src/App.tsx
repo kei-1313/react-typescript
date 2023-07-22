@@ -16,6 +16,9 @@ function App() {
   const nullStr: string = 'nullです';
   const definedStr: string = 'no defined';
 
+  console.log(nullish);
+
+
 
   return (
     <div className="App">
@@ -26,7 +29,6 @@ function App() {
       <h2>{num}</h2>
       <h2>{definedStr}</h2>
       <h2>{nullStr}</h2>
-      {/* <h2>{bignum}</h2> */}
     </div>
   );
 }
