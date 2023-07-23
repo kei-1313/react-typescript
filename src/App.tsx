@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Example from './component/Example';
 
 function App() {
   const str: string = 'Hello';
@@ -29,6 +30,8 @@ function App() {
       <h2>{num}</h2>
       <h2>{definedStr}</h2>
       <h2>{nullStr}</h2>
+
+      <Example />
     </div>
   );
 }
