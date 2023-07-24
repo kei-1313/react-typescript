@@ -22,6 +22,11 @@ function Example02() {
     gender: 'woman'
   }
 
+  const sum = (x: number, y: number) => x + y;
+
+  console.log(sum(100, 200));
+
+
   return (
     <div>
       {userProfile.name}
