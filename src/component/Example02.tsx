@@ -24,6 +24,12 @@ function Example02() {
 
   const sum = (x: number, y: number) => x + y;
 
+  const sum02 = (): void => {
+    console.log('void');
+
+  };
+
+  sum02();
   console.log(sum(100, 200));
 
 
