@@ -25,12 +25,28 @@ function Example02() {
   const sum = (x: number, y: number) => x + y;
 
   const sum02 = (): void => {
-    console.log('void');
+    // console.log('void');
 
   };
 
   sum02();
-  console.log(sum(100, 200));
+  // console.log(sum(100, 200));
+
+  const repeatStr = (value: string, times: number): string[] => {
+    return new Array(times).fill(value);
+  }
+  const repeatNum = (value: number, times: number): number[] => {
+    return new Array(times).fill(value);
+  }
+  const repeat = (value: string, times: number) => {
+    return new Array(times).fill(value);
+  }
+  const styArray = repeatStr('hello', 3);
+  const numArray = repeatNum(3, 3);
+
+
+  console.log(styArray);
+  console.log(numArray);
 
 
   return (
