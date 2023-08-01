@@ -3,7 +3,10 @@ import Hello from "./Hello"
 const Example03: React.FC = () => {
   return (
     <div>
-      <Hello />
+      <Hello text="スパシーバ">
+        <div>アシルパ</div>
+        <div>インナインナ</div>
+      </Hello>
     </div>
   )
 }
