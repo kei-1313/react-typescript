@@ -14,4 +14,16 @@ const Hello: React.FC<HelloProps> = (props) => {
   )
 }
 
+type FcProps = {
+  fn: (text: string) => void
+}
+
+export const Btn: React.FC<FcProps> = (props) => {
+  return (
+    <>
+      <button onClick={() => props.fn('TypeScript')}>ボタン</button>
+    </>
+  )
+}
+
 export default Hello
