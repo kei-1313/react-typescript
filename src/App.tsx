@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Example from './component/Example';
 import Example02 from './component/Example02';
+import Example03 from './component/Example03';
 
 function App() {
   const str: string = 'Hello';
@@ -34,6 +35,7 @@ function App() {
 
       <Example />
       <Example02 />
+      <Example03 />
     </div>
   );
 }
