@@ -22,6 +22,7 @@ export const Btn: React.FC<FcProps> = (props) => {
   return (
     <>
       <button onClick={() => props.fn('TypeScript')}>ボタン</button>
+      <button onClick={(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => console.log('event')}>ボタン2</button>
     </>
   )
 }
