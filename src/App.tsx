@@ -3,6 +3,7 @@ import './App.css';
 import Example from './component/Example';
 import Example02 from './component/Example02';
 import Example03 from './component/Example03';
+import Example04 from './component/Example04';
 
 function App() {
   const str: string = 'Hello';
@@ -36,6 +37,7 @@ function App() {
       <Example />
       <Example02 />
       <Example03 />
+      <Example04 />
     </div>
   );
 }
