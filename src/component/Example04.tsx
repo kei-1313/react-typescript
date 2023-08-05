@@ -1,22 +1,31 @@
 function Example04() {
-  type Post = {
-    id: number,
-    title: string,
-    content: string
-  }
+  type Post = [
+    {
+      id: number,
+      title: string,
+      content: string
+    }
+  ]
 
-  const post: Post = {
-    id: 1,
-    title: 'ダミータイトル',
-    content: 'テキストですテキストですテキストですテキストですテキストですテキストです'
-  }
+  const posts: Post = [
+    {
+      id: 1,
+      title: 'ダミータイトル',
+      content: 'テキストですテキストですテキストですテキストですテキストですテキストです'
+    }
+  ]
 
   return (
     <div>
       <ul>
-        <li>{post.id}</li>
-        <li>{post.title}</li>
-        <li>{post.content}</li>
+        {posts.map(post => {
+          return (
+            <li key={post.id}>
+              <h3>{post.title}</h3>
+              <p>{post.content}</p>
+            </li>
+          )
+        })}
       </ul>
     </div>
   )
